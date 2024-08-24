@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200'><link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="home.html">Beranda</a>
+                <a href="404nf.html">Donasi</a>
+                <a href="404nf.html">Hubungi</a>
+            </nav>
+        </header>
+<!-- partial.html nya mang-->
+ <div class="container">
+    <h2>Kata Sandi Generator</h2>
+    <div class="wrapper">
+        <div class="input-box">
+        <input type="text" disabled>
+        <span class="material-symbols-rounded">copy_all</span>
+        </div>
+        <div class="pass-indicator"></div>
+        <div class="pass-length">
+            <div class="details">
+                <label class="title">Panjang Kata Sandi</label>
+                <span></span>
+            </div>
+            <!---->
+            <input type="range" min="1" max="30" value="15" step="1">
+            </div>
+            <div class="pass-settings">
+                <label class="title">Pengaturan Kata Sandi</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Huruf Kecil (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Huruf Besar (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Angka (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Simbol (-_!)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="exc-duplicate">
+                        <label for="exc-duplicate">Kecualikan Duplikat</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Gunakan Spasi</label>
+                    </li>
+                    </ul>
+                    </div>
+                    <button class="generate-btn">Generate Kata Sandi</button>
+            </div>
+        </div>
+        <!--done Partial.html-->
+        <!--footernya-->
+        <footer class="footer">
+            <div class="footer-content">
+              <p>&copy; 2024 Kata Sandi Generator. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+        <script src="script.js"></script>
+    </div>
+ </div>
+    </body>
+</html>
